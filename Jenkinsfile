@@ -52,7 +52,7 @@ pipeline {
             steps {
                 
                 bat "npm install cypress"
-                bat "SET CYPRESS_INSTALL_BINARY=10.0.1 npm install cypress@10.3.1"
+               
                 bat "npm run cy:run"
             }
         }
