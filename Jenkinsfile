@@ -51,7 +51,7 @@ pipeline {
         stage('Testing') {
             steps {
                 bat "npm install --save-dev cypress"
-              
+                bat ".\node_modules\.bin\cypress.cmd install --force"
                 bat "npm run cy:run"
             }
         }
