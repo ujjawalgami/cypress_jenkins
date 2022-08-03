@@ -51,9 +51,8 @@ pipeline {
         stage('Testing') {
             steps {
                 
-                bat "npm install -D cypress@10.3.1"
-                bat "set CYPRESS_RUN_BINARY=C:/Users/vvnt/AppData/Local/Cypress/Cache/10.3.1/Cypress/Cypress.exe"
-                bat "npm run cy:run"
+                bat "npm install cypress
+                bat "npx cypress run"
             }
         }
         
